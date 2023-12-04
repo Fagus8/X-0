@@ -38,7 +38,7 @@ for (let i = 0; i < divs.length; i++) {
             (divs[2].innerText === "X" && divs[4].innerText === "X" && divs[6].innerText === "X")
         ) {
             x = x + 5;
-            myh2.innerText = "Player X Wins! (X: " + x + " | O: " + o + ")";
+            myh2.innerText = `Player X Wins! X: ${x} | O: ${o}`;
             myh2.style.color = "rgb(122, 36, 36)";
             
             for (let i = 0; i < divs.length; i++) {
@@ -62,7 +62,7 @@ for (let i = 0; i < divs.length; i++) {
                 
             }
             o = o + 5;
-            myh2.innerText = "Player O Wins! (X: " + x + " | O: " + o + ")";
+            myh2.innerText = `Player O Wins! X: ${x} | O: ${o}`;
             myh2.style.color = "white";
            
         } else if (
@@ -76,7 +76,7 @@ for (let i = 0; i < divs.length; i++) {
             }
             myh2.innerText = "It's a draw!";
             myh2.style.color = "yellow";
-            myh2.innerText = "Player X Wins! (X: " + x + " | O: " + o + ")";
+            myh2.innerText = `It's Draw! X: ${x} | O: ${o}`;
         }
 
         count++;
