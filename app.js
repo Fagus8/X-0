@@ -17,7 +17,7 @@ for (let i = 0; i < divs.length; i++) {
      
         if (count % 2 === 0) {
             divs[i].innerText = "X";
-            divs[i].style.color = "#000000";
+            divs[i].style.color = "rgb(122, 36, 36)"
             divs[i].style.pointerEvents = "none"
         } 
        
@@ -39,13 +39,14 @@ for (let i = 0; i < divs.length; i++) {
         ) {
             x = x + 5;
             myh2.innerText = "Player X Wins! (X: " + x + " | O: " + o + ")";
-            myh2.style.color = "green";
+            myh2.style.color = "rgb(122, 36, 36)";
+            
             for (let i = 0; i < divs.length; i++) {
                 divs[i].style.pointerEvents = "none"
                 
             }
             
-            myh2.style.color = "white";
+           
         } else if (
             (divs[0].innerText === "0" && divs[1].innerText === "0" && divs[2].innerText === "0") ||
             (divs[3].innerText === "0" && divs[4].innerText === "0" && divs[5].innerText === "0") ||
@@ -75,7 +76,7 @@ for (let i = 0; i < divs.length; i++) {
             }
             myh2.innerText = "It's a draw!";
             myh2.style.color = "yellow";
-           
+            myh2.innerText = "Player X Wins! (X: " + x + " | O: " + o + ")";
         }
 
         count++;
