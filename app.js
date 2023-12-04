@@ -18,13 +18,19 @@ for (let i = 0; i < divs.length; i++) {
         if (count % 2 === 0) {
             divs[i].innerText = "X";
             divs[i].style.color = "rgb(122, 36, 36)"
-            divs[i].style.pointerEvents = "none"
+           
+                divs[i].style.pointerEvents = "none"
+               
         } 
        
         else {
             divs[i].innerText = "0";
             divs[i].style.color = "white";
+          
             divs[i].style.pointerEvents = "none"
+              
+            
+            
         }
     }
         if (
@@ -41,10 +47,16 @@ for (let i = 0; i < divs.length; i++) {
             myh2.innerText = `Player X Wins! X: ${x} | O: ${o}`;
             myh2.style.color = "rgb(122, 36, 36)";
             
-            for (let i = 0; i < divs.length; i++) {
-                divs[i].style.pointerEvents = "none"
+                     for (c = 0 ; c <divs.length ; c ++ ) {
+                        divs[c].style.pointerEvents = "none"
+                     }
+                   
                 
-            }
+                  
+                 
+                
+                
+            
             
            
         } else if (
@@ -57,10 +69,15 @@ for (let i = 0; i < divs.length; i++) {
             (divs[0].innerText === "0" && divs[4].innerText === "0" && divs[8].innerText === "0") ||
             (divs[2].innerText === "0" && divs[4].innerText === "0" && divs[6].innerText === "0")
         ) {
-            for (let i = 0; i < divs.length; i++) {
-                divs[i].style.pointerEvents = "none"
-                
-            }
+           
+           
+            for (c = 0 ; c <divs.length ; c ++ ) {
+                divs[c].style.pointerEvents = "none"
+             }
+              
+             
+             
+            
             o = o + 5;
             myh2.innerText = `Player O Wins! X: ${x} | O: ${o}`;
             myh2.style.color = "white";
@@ -70,10 +87,15 @@ for (let i = 0; i < divs.length; i++) {
             divs[3].innerText !== "" && divs[4].innerText !== "" && divs[5].innerText !== "" &&
             divs[6].innerText !== "" && divs[7].innerText !== "" && divs[8].innerText !== ""
         ) {
-            for (let i = 0; i < divs.length; i++) {
-                divs[i].style.pointerEvents = "none"
-                
-            }
+           
+           
+          
+            for (c = 0 ; c <divs.length ; c ++ ) {
+                divs[c].style.pointerEvents = "none"
+             }
+             
+             
+            
             myh2.innerText = "It's a draw!";
             myh2.style.color = "yellow";
             myh2.innerText = `It's Draw! X: ${x} | O: ${o}`;
