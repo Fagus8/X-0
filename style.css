@@ -10,12 +10,15 @@ gap: 10px;
     margin-right: 100px;
     margin-top: 80px;
 }
+
 .r , button {
     width: 200px;
     height: 40px;
     border : 1px solid aqua;
     border-radius: 15px;
     cursor: pointer;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 button:hover {
     color: white;
