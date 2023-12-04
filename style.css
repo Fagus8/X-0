@@ -1,74 +1,92 @@
-
+/* General Styles */
 body {
     margin: 0;
-background-color: #10dbc7;
-display: flex;
-flex-direction: column;
-gap: 10px;
+    background-color: #10dbc7;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
+
 .w {
     margin-right: 100px;
     margin-top: 80px;
 }
 
-.r , button {
+.r, button {
     width: 200px;
     height: 40px;
-    border : 1px solid aqua;
+    border: 1px solid aqua;
     border-radius: 15px;
     cursor: pointer;
     margin-left: 20px;
     margin-top: 10px;
 }
+
 button:hover {
     color: white;
     background-color: #10dbc7;
-    
 }
+
 .cub:hover {
     cursor: pointer;
 }
+
+/* Container and Child Styles */
 .container {
-   flex-direction: column;
-  
+    flex-direction: column;
     display: flex;
     justify-content: center;
-    
     align-items: center;
 }
-.child {
-    width: 30%;
-    height: 300px;
- display: flex;
-  flex-wrap: wrap;
 
- }
- 
+.child {
+    width: 300px;
+    height: 400px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .child h1 {
     margin: 0;
-    
+}
+
+/* Cub Styles */
+.z {
+    display: flex;
+    width: 100%;
+   
+}
+
+.b {
+    display: flex;
+    max-width: 100%;
 }
 
 .cub {
     background-color: #10dbc7;
-width: 100px;
-height: 100px;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  font-family: 'TicTacToe', sans-serif;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'TicTacToe', sans-serif;
     font-size: 50px;
     justify-content: center;
     align-items: center;
- 
+    
 }
-.cub2,.cub1,.cub4,.cub5{
+
+/* Border Styles for Cub Elements */
+.cub2, .cub1, .cub4, .cub5 {
     border-right: 5px solid #0db1a0;
-    border-bottom: 5px solid #0db1a0; ;
+    border-bottom: 5px solid #0db1a0;
 }
- .cub8,.cub7{
-   border-right: 5px solid #0db1a0;
+
+.cub8, .cub7 {
+    border-right: 5px solid #0db1a0;
 }
-.cub3,.cub6 {
+
+.cub3, .cub6 {
     border-bottom: 5px solid #0db1a0;
 }
